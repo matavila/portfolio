@@ -1,0 +1,2854 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&family=Rubik+Spray+Paint&family=Rubik+Vinyl&family=Unbounded:wght@400;500;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(assets/Images/Background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+html{
+    font-size: 62.5%;
+}
+/* CADA 1REM SERÁ CONSIDERADO 10PX*/
+/*-------------------------Parte das variáveis----------------------*/
+:root{
+   --title:'Unbounded';
+   --texto:'DM Sans';
+   --span:'Rubik Spray Paint';
+   --title-color:rgb(36, 33, 33);
+   --span-color:rgb(243, 208, 8);
+   --container-shadow:5px 5px 15px 10px rgba(0, 0, 0, 0.5);
+   --menu-color:rgb(255, 196, 0);
+   --porcetage:#6665ee;
+   --container-color:aliceblue; 
+   --project-container-color:rgb(70, 66, 66);
+}
+/*---X------------X--------------X-----------X-------------X--------*/
+/*------------------------Parte do Containers-----------------------*/
+body .Container{
+    background-color: var(--container-color);
+    width: 90%;
+    max-width: 1400px;
+    height: 80vh;
+    margin-top: 80px;
+    margin-left: 70px;
+    box-shadow:  var(--container-shadow);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body .AboutContainer{
+    background-color: var(--container-color);
+    width: 90%;
+    max-width: 1400px;
+    height: 80vh;
+    margin-top: 80px;
+    margin-left: 70px;
+    box-shadow:  var(--container-shadow);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+body .ExpirienceContainer{
+    background-color: var(--container-color);
+    width: 90%;
+    max-width: 1400px;
+    height: 80vh;
+    margin-top: 80px;
+    margin-left: 70px;
+    box-shadow:  var(--container-shadow);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+body .ProjectContainer{
+    background-color: var(--container-color);
+    width: 90%;
+    max-width: 1400px;
+    height: 80vh;
+    margin-top: 80px;
+    margin-left: 70px;
+    box-shadow:  var(--container-shadow);
+    display: grid;
+    grid-template-columns: 1fr 3fr;      
+}
+body .CertificatesContainer{
+    background-color: var(--container-color);
+    width: 90%;
+    max-width: 1400px;
+    height: 80vh;
+    margin-top: 80px;
+    margin-left: 70px;
+    box-shadow:  var(--container-shadow);
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+}
+body .ContactContainer{
+    background-color: var(--container-color);
+    width: 90%;
+    max-width: 1400px;
+    height: 80vh;
+    margin-top: 80px;
+    margin-left: 70px;
+    box-shadow:  var(--container-shadow);
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+}
+body .TestimonialContainer{
+    background-color: var(--container-color);
+    width: 90%;
+    max-width: 1400px;
+    height: 80vh;
+    margin-top: 80px;
+    margin-left: 70px;
+    box-shadow:  var(--container-shadow);
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+}
+/*---X------------X--------------X-----------X-------------X--------*/
+/*-----------------Parte dos títulos das páginas 60px--------------------*/
+.Title h1 {
+    font-family: var(--title);
+    font-weight: 600;
+    font-size: 6rem;
+    color:var(--title-color);
+}
+/*-----------------Parte dos marcadores de páginas------------------*/
+#btExperience{
+    color:aliceblue;
+}
+#Home{
+    color: aliceblue;
+}
+#btAbout{
+    color:aliceblue; 
+ }
+#btProject{
+    color:aliceblue;
+}
+#btCertificate{
+    color:aliceblue;
+}
+#btContact{
+    color:aliceblue;
+}
+#btTestimonial{
+    color:aliceblue;
+}
+/*-------------------Conteúdo do container principal----------------*/
+
+body .Container .Introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    min-width: 300px;
+    margin-left: 15%;
+}
+body .Container .Introduction h1{
+    font-family: var(--title);
+    font-weight: 600;
+    font-size: 3.8rem;
+    margin-bottom: 10px;
+    color:var(--title-color);
+}
+body .Container .Introduction h2{
+    font-family: var(--title);
+    font-weight: 600;
+    font-size: 3rem;  
+    margin-bottom: 10px;
+}
+body .Container .Introduction h2 span{
+    font-family: var(--span);
+    font-weight: 500;
+    font-size: 5rem;
+    letter-spacing: 3px;
+    color:var(--span-color);
+    text-shadow: 2px 2px 5px #000000;
+    margin-left: 5px;
+}
+body .Container .IntroductionImage{
+    background-image: url(assets/Images/Foto_Perfil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+body .Container .Introduction p:first-of-type{
+    font-family: var(--texto);
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 20px #000000;
+    color: var(--title-color);
+    background-color: rgb(255, 196, 0, 0.85);
+    margin-bottom: 20px;
+}
+body .Container .Introduction p{
+    text-align: justify;
+    font-family: var(--texto);
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+}
+body .Container .Introduction button{
+    font-family: var(--title);
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--title-color);
+    background-color: rgb(255, 196, 0, 0.85);
+    border: 2px solid black;
+    cursor: pointer;
+}
+/*---X------------X--------------X-----------X-------------X--------*/
+/*---------------------Parte do Menu (Principal)--------------------*/
+Body .Container .IntroductionImage .Menu{
+    background-color: var(--menu-color);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 90%;
+    width: 40px;
+    border-radius: 50px;
+    padding: 15px;
+}
+Body .Container .IntroductionImage .Menu .Line{
+    border-left:2px dashed rgb(0, 0, 0) ;
+    position: relative;
+    left: 13px;
+    z-index:0;
+}
+Body .Container .IntroductionImage .Menu ul{
+    list-style: none;
+    margin-top: 20px;
+}
+Body .Container .IntroductionImage .Menu ul li{
+    margin-bottom: 20px;
+    background-color: var(--menu-color);
+    position: relative;
+    z-index: 100;
+}
+Body .Container .IntroductionImage .Menu ul li a{
+    cursor: pointer;
+}
+Body .Container .IntroductionImage .Menu ul li a span{
+    color: #000000;
+    height: 30px;
+}
+
+Body .Container .IntroductionImage .Menu ul li a span:hover{
+    color: aliceblue;
+}
+/*---X------------X--------------X-----------X-------------X--------*/
+/*-------------------------Parte do MENU (OUTROS)-------------------*/
+
+.MainMenu{
+    background-color: var(--menu-color);
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    height: 80vh;
+}
+.MainMenu img{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 5%;
+}
+.MainMenu .NavBar{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+.MainMenu .NavBar ul{
+    position: relative;
+    top: 6px;
+    width: 100%;
+    height: auto;
+}
+ .MainMenu .NavBar ul li{
+    list-style: none;
+    margin-bottom: 10%;
+    background-color: var(--menu-color);
+
+}
+ .MainMenu .NavBar ul li:last-child{
+    margin-bottom: 0;
+}
+ .MainMenu .NavBar ul li a{
+    font-family: var(--title);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--title-color);
+}
+.MainMenu .NavBar .About{
+    color: aliceblue;
+}
+.MainMenu .NavBar ul li a:hover{
+    color: aliceblue;
+}
+/*---X------------X--------------X-----------X-------------X--------*/
+/*----------------------Parte do Pessoal (ABOUT)---------------------*/
+body .AboutContainer .About{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2;
+}
+body .AboutContainer .About .AboutInformation{
+    width: 98%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+body .AboutContainer .About .Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    border: 2px dashed black;
+    height: 10%;
+    width: 91%;
+    max-width: 799px;
+    margin-bottom: 8%;
+}
+body .AboutContainer .About .AboutInformation .Text{
+    height: 10%;
+    width: 91%;
+    max-width: 799px;
+    margin-bottom: 5%;
+}
+body .AboutContainer .About .AboutInformation .Text p{
+    text-align: justify;
+    font-family: var(--texto);
+    font-size: 1.6rem;
+}
+
+/*----------------------Parte do Pessoal (SKILL)---------------------*/
+body .AboutContainer .About .AboutInformation .Skills{
+    width: 91%;
+    max-width: 799px;
+    margin-top: 5%;
+    background-color:aliceblue;
+    height: 30%;
+    box-shadow: 
+        -5px -4px 3px 0px rgba(254, 254, 254, 0.568),
+         5px  4px 3px 0px rgba(88,88,88,0.425);
+    overflow-y: scroll;
+}
+body .AboutContainer .About .AboutInformation .Skills h1{
+    font-family: var(--title);
+    color: var(--title-color);
+    font-size: 1.8rem;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar {
+    margin: 20px 0;
+    margin-left: 30px;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Info{
+    margin-bottom: 5px;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Info span{
+    font-family: var(--texto);
+    font-size: 1.6rem;
+    opacity: 0;
+    animation: ShowText 0.5s 1s linear forwards ;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line{
+    height: 10px;
+    width: 90%;
+    background-color: #eeecec;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,00.5),
+                0 1px rgba(255,255,255,0,8);
+    animation: Complete 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: var(--porcetage);
+    animation: CompletePorcentage 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.html span{
+    width: 90%;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.css span{
+    width: 60%;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.js span{
+    width: 50%;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.excel span{
+    width: 100%;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.vba span{
+    width: 80%;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.office span{
+    width: 100%;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.canva span{
+    width: 100%;
+}body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.photoshop span{
+    width: 60%;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.figma span{
+    width: 50%;
+}
+
+
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line span::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: Showtext2 0.5s 1.5s linear forwards;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: Showtext2 0.5s 1.5s linear forwards;
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.html span::after{
+    content: '90%';
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.css span::after{
+    content: '60%';
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.js span::after{
+    content: '50%';
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.excel span::after{
+    content: '100%';
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.vba span::after{
+    content: '80%';
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.office span::after{
+    content: '100%';
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.canva span::after{
+    content: '100%';
+}body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.photoshop span::after{
+    content: '60%';
+}
+body .AboutContainer .About .AboutInformation .Skills .Bar .Progress-line.figma span::after{
+    content: '50%';
+}
+
+@keyframes ShowText {
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes Showtext2 {
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes Complete {
+    100%{
+        transform: scaleX(1);
+    }
+}
+@keyframes CompletePorcentage {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+
+/*---X------------X--------------X-----------X-------------X--------*/
+/*-------------------------Parte da Experiencia --------------------*/
+body .ExpirienceContainer .Expirience{
+    Display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2;
+}
+body .ExpirienceContainer .Expirience .ExpirienceInformation{
+    width: 98%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+body .ExpirienceContainer .Expirience .ExpirienceInformation .Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    border: 2px dashed black;
+    height: 10%;
+    width: 91%;
+    max-width: 799px;
+    margin-bottom: 8%;
+}
+body .ExpirienceContainer .Expirience .ExpirienceInformation .Content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 82%;
+    gap: 20%;
+    margin-bottom: 5%;
+}
+body .ExpirienceContainer .Expirience .ExpirienceInformation .Content a{
+    text-decoration: none;
+}
+body .ExpirienceContainer .Expirience .ExpirienceInformation .Content a h2{
+    font-family: var(--title);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    height: auto;
+    color: var(--title-color);
+}
+body .ExpirienceContainer .Expirience .ExpirienceInformation .Content a h2:hover{
+    color: rgb(6, 131, 240);
+}
+body .ExpirienceContainer .Expirience .ExpirienceInformation .Information{
+    width: 80%;
+    background-color:aliceblue;
+    height: 30%;
+    overflow-y: scroll;
+}
+/*-------------------------Parte do history line---- --------------------*/
+.Education{
+    width: 58%;
+    height: 100%;
+    position: relative;
+    left: 10%;
+    top: 8%;
+    border-left: 2px solid black;
+    padding: 0 20px 0 30px;
+    margin-bottom: 4.4vh;
+    font-size: 1.6rem;
+
+}
+.Education h1::before{
+    content: '';
+    display:block ;
+    width: 10%;
+    max-width: 45px;
+    height: 3.5vh;
+    border-radius: 15%;
+    position: absolute;
+    left: -5%;
+    background-color: hsl(242, 2%, 12%);
+    box-shadow: 0px 5px 10px #888888;
+}
+.Education div::before{
+    content: "";
+    display:block ;
+    width: 3%;
+    min-width: 15px;
+    height: 3%;
+    border-radius: 50%;
+    background-color: orange;
+    border: 3px solid hsl(242, 2%, 12%);
+    position: absolute;
+    margin-top: 0.8vh;
+    left: -1.3vh;
+}
+/*.Education .InformationTitle h1::after{
+    content: url(assets/Images/book.svg);
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    position: relative;
+    left: -34.5%;
+}*/
+.Education div h2{
+    color:hsl(242, 2%, 12%) ;
+    margin-bottom: 0.5vh;
+}
+.Education div h4 {
+    color:rgb(96, 98, 128);
+    margin-bottom: 0.5vh;
+}
+.Education div h3{
+    color:hsl(240, 7%, 19%) ;
+    margin-bottom: 1.2vh;
+}
+
+
+.Work{
+    width: 58%;
+    height: fit-content;
+    position: relative;
+    left: 10%;
+    top: 8%;
+    border-left: 2px solid black;
+    padding: 0 20px 0 30px;
+    margin-bottom: 4.4vh;
+    font-size: 1.6rem;
+}
+.InformationTitle{
+    margin-bottom: 2vh;
+}
+.Work h1::before{
+    content: '';
+    display:block ;
+    width: 10%;
+    max-width: 45px;
+    height: 3.5vh;
+    border-radius: 15%;
+    position: absolute;
+    left: -5%;
+    background-color: hsl(242, 2%, 12%);
+    box-shadow: 0px 5px 10px #888888;
+}
+.Work div::before{
+    content: "";
+    display:block ;
+    width: 3%;
+    min-width: 15px;
+    height: 1.5%;
+    border-radius: 50%;
+    background-color: orange;
+    border: 3px solid hsl(242, 2%, 12%);
+    position: absolute;
+    margin-top: 0.8vh;
+    left: -1.3vh;
+}
+/*.Work div::after{
+    content: url(assets/Images/work.svg);
+    display:block ;
+    width: 2vw;
+    height: 2vh;
+    border-radius: 10%;
+    position: absolute;
+    top: 0.5vh;
+    left: -1vh;
+}*/
+.Work div h2{
+    color:hsl(242, 2%, 12%) ;
+    margin-bottom: 0.5vh;
+}
+.Work div h4 {
+    color:rgb(96, 98, 128);
+    margin-bottom: 0.5vh;
+}
+.Work div h3{
+    color:hsl(240, 7%, 19%) ;
+    margin-bottom: 0.5vh;
+}
+.Work div h4:last-child{
+    margin-bottom: 1.2vh;
+    text-align: justify;
+}
+/*_______X_____________X___________X_____________X_______________X*/
+/*-------------------------Parte dos Projetos --------------------*/
+body .ProjectContainer .Project{
+    Display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2;
+}
+
+body .ProjectContainer .Project .ProjectInformation{
+    width: 98%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+body .ProjectContainer .Project .ProjectInformation .Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    border: 2px dashed black;
+    height: 10%;
+    width: 91%;
+    max-width: 799px;
+    margin-bottom: 8%;
+}
+body .ProjectContainer .Project .ProjectInformation .ProjectsContent{
+    width: 90%;
+    height: 50%;
+    max-height: 900px;
+    overflow-y: scroll;
+}
+body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 1vh;
+}
+body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li{
+    width: 380px;
+    height: 230px;
+    border-radius: 15px;
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 50px;
+
+}
+body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li img{
+    width: 380px;
+    height: 230px;
+    border-radius: 15px;
+    transform: scale(0.95);
+}
+body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li img:hover{
+    animation: Projects  1.5s linear forwards;
+}
+@keyframes Projects{
+    100%{
+        transform: scale(1)
+    }
+}
+
+.ProjectExplainer{
+    background-color: var(--project-container-color);
+    border-radius: 15px;
+    color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 380px;
+    height: 230px;
+    box-shadow: 
+    -5px -4px 3px 0px rgba(254, 254, 254, 0.568),
+     5px  4px 3px 0px rgba(88,88,88,0.425);
+     cursor: pointer;
+}
+.ProjectExplainer a{
+    text-decoration: none;
+}
+.ProjectExplainer a h1{
+   text-align: center;
+   font-family: var(--title);
+   font-size: 20px;
+   text-shadow: 2px 2px 5px #000000; 
+   margin-bottom: 40px;
+   color: #eeecec;
+}
+.ProjectExplainer  a p{
+    text-decoration: none;
+    color: #eeecec;
+   font-family: var(--texto);
+   font-weight: 700;
+   text-align: justify;
+}
+/*---X------------X--------------X-----------X-------------X--------*/
+/*-------------------------Parte dos Certificados --------------------*/
+body .CertificatesContainer .Certificate{
+    Display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2;
+    height:130vh;
+}
+
+body .CertificatesContainer .Certificate .CertificateInformation{
+    width: 98%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+body .CertificatesContainer .Certificate .CertificateInformation .Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    border: 2px dashed black;
+    height: 10%;
+    width: 91%;
+    max-width: 799px;
+    margin-bottom: 8%;
+}
+body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent{
+    width: 90%;
+    height: 110vh;
+    overflow-y: scroll;
+}
+body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 1vh;
+}
+body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul li{
+    width: 380px;
+    height: 330px;
+    border-radius: 15px;
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul li img{
+    width: 380px;
+    height: 330px;
+    border-radius: 15px;
+    transform: scale(0.95);
+}
+body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul li img:hover{
+    animation: Certificate  1.5s linear forwards;
+}
+@keyframes Certificate{
+    100%{
+        transform: scale(1)
+    }
+}
+
+/*---X------------X--------------X-----------X-------------X--------*/
+/*-------------------------Parte do Contato --------------------*/
+body .ContactContainer .Contact{
+    Display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2;
+    height:130vh;
+}
+
+body .ContactContainer .Contact .ContactInformation{
+    width: 98%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+body .ContactContainer .Contact .ContactInformation .Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    border: 2px dashed black;
+    height: 10%;
+    width: 91%;
+    max-width: 799px;
+    margin-bottom: 8%;
+}
+body .ContactContainer .Contact .ContactInformation .ContactLinks{
+    width: 78%;
+    border: 2px dashed black;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+body .ContactContainer .Contact .ContactInformation .ContactLinks ul{
+    list-style: none;   
+    width: 35vh;
+}
+body .ContactContainer .Contact .ContactInformation .ContactLinks ul li{
+    margin-bottom: 10px;
+}
+body .ContactContainer .Contact .ContactInformation .ContactLinks ul li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--texto);
+}
+body .ContactContainer .Contact .ContactInformation .ContactLinks ul li a img {
+    width: 16px;
+    height: 16px;
+    margin-right:5px;
+}
+body .ContactContainer .Contact .ContactInformation .Contactform{
+    width: 78%;
+    border: 2px dashed black;
+    padding: 10px;
+}
+body .ContactContainer .Contact .ContactInformation .Contactform form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+body .ContactContainer .Contact .ContactInformation .Contactform form label{
+    font-family: var(--texto);
+    margin-right: 10px;
+}
+body .ContactContainer .Contact .ContactInformation .Contactform form input{
+    width: 35%;
+    height: 30px;
+    border-radius: 5px;
+}
+body .ContactContainer .Contact .ContactInformation .Contactform form textarea{
+    width: 100%;
+}
+body .ContactContainer .Contact .ContactInformation .Contactform form input:first-of-type{
+    margin-right: 15%;
+}
+body .ContactContainer .Contact .ContactInformation .Contactform form .input-grup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+body .ContactContainer .Contact .ContactInformation .Contactform form .text-grup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+body .ContactContainer .Contact .ContactInformation .Contactform form button{
+    font-family: var(--title);
+    width: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/*---X------------X--------------X-----------X-------------X--------*/
+/*-------------------------Parte dos Depoimentos --------------------*/
+body .TestimonialContainer .Testimonial{
+    Display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2;
+    height:130vh;
+}
+
+body .TestimonialContainer .Testimonial .TestimonialInformation{
+    width: 98%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    border: 2px dashed black;
+    height: 10%;
+    width: 91%;
+    max-width: 799px;
+    margin-bottom: 8%;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace{
+    width: 78%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 
+    -5px -4px 3px 0px rgba(254, 254, 254, 0.568),
+     5px  4px 3px 0px rgba(88,88,88,0.425);
+    overflow-y:scroll   ;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
+    border-radius: 20px;
+    background-color: var(--title-color);
+    padding: 10px;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonText{
+    width: 80%;
+    height: 100%;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonText p{
+    font-family: var(--texto);
+    font-size: 1.5rem;
+    color: var(--container-color);
+    margin-right:20px;
+    text-align: justify;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonText h2{
+    font-family: var(--title);
+    font-weight: 700;
+    color: var(--project-container-color);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonText p span{
+    font-family: var(--title);
+    font-weight: 700;
+    color: var(--span-color);
+    font-size: 20px;
+    margin: 5px 5px;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonFile{
+    display: flex;
+    padding: 5px 5px;
+    flex-direction: column;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    max-width: 180px;
+    height: 100%;
+    background-color: #383737;
+    box-shadow: 10px 5px 5px black;
+    margin-right:10%;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonFile img{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 5px;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonFile h1{
+   text-align: center;
+   font-family: var(--title);
+   font-size: 15px;
+   text-shadow: 2px 2px 5px #000000; 
+   color: #eeecec;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonFile h2{
+    text-align: center;
+   font-family: var(--texto);
+   font-weight: 700;
+   font-size: 12px;
+   text-shadow: 2px 2px 5px #000000; 
+   color: #eeececd3;
+   margin-bottom: 5px;
+}
+body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonFile h3{
+    text-align: center;
+   font-family: var(--texto);
+   font-weight: 700;
+   font-size: 10px;
+   text-shadow: 2px 2px 5px #000000; 
+   color: #eeececd3;
+   margin-bottom: 10px;
+}
+
+/*---X------------X--------------X-----------X-------------X--------*/
+/*-------------------------Parte da Responsividade --------------------*/
+@media (max-width: 1024px){
+
+    body .Container{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .AboutContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .ExpirienceContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .ProjectContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .CertificatesContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .ContactContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .TestimonialContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    /*---X------------X--------------X-----------X-------------X--------*/
+    .Title{
+        height: 8%;
+    }
+    .Title h1 {
+        font-family: var(--title);
+        font-weight: 600;
+        font-size: 4rem;
+        color:var(--title-color);
+    }
+    .IntroductionImage{
+        background-position: -80px;
+    }
+    .NavBar ul{
+       margin-top: 20%; 
+    }
+    .Text p{
+        margin-bottom: 5%;
+    }
+    .Skills{
+        position: relative;
+        top: 30px;
+        margin-top: 5%;
+        height: 50%;
+    }
+    /*-------------------------Parte dos Projetos --------------------*/
+    .ProjectExplainer a{
+        text-decoration: none;
+    }
+    .ProjectExplainer a h1{
+    margin-bottom: 30px;
+    }
+    .ProjectExplainer  a p{
+    font-size: 1.5rem;
+    }
+    /*---X------------X--------------X-----------X-------------X--------*/
+    /*-------------------------Parte do Contato --------------------*/
+    body .ContactContainer .Contact .ContactInformation .ContactLinks{
+        width: 91%;
+    }
+    body .ContactContainer .Contact .ContactInformation .Contactform{
+        width: 91%;
+    }
+    body .ContactContainer .Contact .ContactInformation .Contactform form button{
+        position: relative;
+        left: 35%;
+    }
+    /*---X------------X--------------X-----------X-------------X--------*/
+    body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace{
+        width: 92%;
+        height: 80%;
+    }
+}
+@media (max-width:1440px){
+    
+    body .Container{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .AboutContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .ExpirienceContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .ProjectContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .CertificatesContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .ContactContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+    body .TestimonialContainer{
+        width: 90%;
+        margin-left: 1%;
+    }
+}
+@media (max-width: 768px){
+
+        body .Container{
+            width: 70%;
+            display: flex;
+        }
+        body .AboutContainer{
+            width: 70%;
+            display: flex;
+        }
+        body .ExpirienceContainer{
+            width: 70%;
+            display: flex;
+        }
+        body .ProjectContainer{
+            width: 70%;
+            display: flex;
+        }
+        body .CertificatesContainer{
+            width: 70%;
+            display: flex;
+        }
+        body .ContactContainer{
+            width: 70%;
+            display: flex;
+        }
+        body .TestimonialContainer{
+            width: 70%;
+            display: flex;
+        }
+        /*---X------------X--------------X-----------X-------------X--------*/
+        /*-----------------Parte dos títulos das páginas 60px--------------------*/
+        .Title h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        /*-------------------Conteúdo do container principal----------------*/
+
+        body .Container .Introduction{
+            width: 80%;
+            margin-left: 5%;
+            align-items: center;
+        }
+        body .Container .IntroductionImage{
+            background-image:none;
+
+        }
+        body .Container .Introduction p{
+            text-align: center;
+        }
+        /*---X------------X--------------X-----------X-------------X--------*/
+        /*-------------------------Parte do MENU (OUTROS)-------------------*/
+
+        .MainMenu{
+            width: auto;
+            max-width: 300px;
+            height: 100%;
+        }
+
+        /*---X------------X--------------X-----------X-------------X--------*/
+        /*----------------------Parte do Pessoal (ABOUT)---------------------*/
+        body .AboutContainer .About{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        body .AboutContainer .About .Title {
+            margin-bottom: 15%;
+        }
+        body .AboutContainer .About .AboutInformation .Text{
+            margin-bottom: 55%;
+        }
+        body .AboutContainer .About .AboutInformation .Text p{
+            text-align: justify;
+            font-family: var(--texto);
+            font-size: 1.6rem;
+        }
+        /*---X------------X--------------X-----------X-------------X--------*/
+        /*-------------------------Parte da Experiencia --------------------*/
+        body .ExpirienceContainer .Expirience{
+            width: 100%;
+        }
+        body .ExpirienceContainer .Expirience .ExpirienceInformation{
+            height: 100%;
+        }
+        body .ExpirienceContainer .Expirience .ExpirienceInformation .Title{
+            margin-bottom: 15%;
+        }
+        body .ExpirienceContainer .Expirience .ExpirienceInformation .Content{
+            margin-bottom: 8%;
+        }
+
+        body .ExpirienceContainer .Expirience .ExpirienceInformation .Information{
+            width: 90%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+        }
+        /*-------------------------Parte do history line---- --------------------*/
+        .Education{
+            width: 80%;
+            height: fit-content;
+            position: relative;
+            left: 10%;
+            top: 8%;
+            border-left: 2px solid black;
+            padding: 0 20px 0 30px;
+            margin-bottom: 4.4vh;
+            font-size: 1.6rem;
+
+        }
+        .Education h1::before{
+            content: '';
+            display:block ;
+            width: 15%;
+            max-width: 45px;
+            height: 3.5vh;
+            border-radius: 15%;
+            position: absolute;
+            left: -8%;
+            background-color: hsl(242, 2%, 12%);
+            box-shadow: 0px 5px 10px #888888;
+        }
+        .Education div::before{
+            content: "";
+            display:block ;
+            width: 3%;
+            min-width: 15px;
+            height: 3%;
+            border-radius: 50%;
+            background-color: orange;
+            border: 3px solid hsl(242, 2%, 12%);
+            position: absolute;
+            margin-top: 0.8vh;
+            left: -1.3vh;
+        }
+        .Work{
+            width: 80%;
+            padding: 0 20px 0 30px;
+            margin-bottom: 4.4vh;
+            font-size: 1.6rem;
+        }
+        .InformationTitle{
+            margin-bottom: 2vh;
+        }
+        .Work h1::before{
+            content: '';
+            display:block ;
+            width: 15%;
+            max-width: 45px;
+            height: 3.5vh;
+            border-radius: 15%;
+            position: absolute;
+            left: -8%;
+            background-color: hsl(242, 2%, 12%);
+            box-shadow: 0px 5px 10px #888888;
+        }
+        .Work div::before{
+            content: "";
+            display:block ;
+            width: 3%;
+            min-width: 15px;
+            height: 1%;
+            border-radius: 50%;
+            background-color: orange;
+            border: 3px solid hsl(242, 2%, 12%);
+            position: absolute;
+            margin-top: 0.8vh;
+            left: -1.3vh;
+        }
+        /*_______X_____________X___________X_____________X_______________X*/
+        /*-------------------------Parte dos Projetos --------------------*/
+        body .ProjectContainer .Project{
+            Display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body .ProjectContainer .Project .ProjectInformation{
+            width: 98%;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+        body .ProjectContainer .Project .ProjectInformation .Title{
+            margin-bottom: 15%;
+        }
+        body .ProjectContainer .Project .ProjectInformation .ProjectsContent{
+            width: 90%;
+            height: 80%;
+            max-height: 900px;
+            overflow-y: scroll;
+        }
+        body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li{
+            width: 100%;
+        }
+        body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li img{
+            width: 100%;
+            height:100%;
+            border-radius: 15px;
+            transform: scale(0.95);
+        }
+        .ProjectExplainer  a p{
+            text-decoration: none;
+            color: #eeecec;
+            font-family: var(--texto);
+            padding: 10px 30px;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+        /*---X------------X--------------X-----------X-------------X--------*/
+        /*-------------------------Parte dos Certificados --------------------*/
+        body .CertificatesContainer .Certificate{
+            Display: flex;
+            flex-direction: column;
+            align-items: center;
+            height:100%;
+        }
+
+        body .CertificatesContainer .Certificate .CertificateInformation{
+            width: 98%;
+            height: 97%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+        body .CertificatesContainer .Certificate .CertificateInformation .Title{
+            margin-bottom: 15%;
+        }
+        body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent{
+            width: 80%;
+            height: 100%;
+            overflow-y: scroll;
+        }
+        body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul{ 
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul li{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            list-style: none;
+            align-items: center;
+            margin-bottom: 30px;
+            cursor: pointer;
+
+        }
+        body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul li img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            transform: scale(1);
+        }
+        /*---X------------X--------------X-----------X-------------X--------*/
+        /*-------------------------Parte do Contato --------------------*/
+        body .ContactContainer .Contact{
+            Display: flex;
+            flex-direction: column;
+            align-items: center;
+            grid-column: 2;
+            height:100%;
+        }
+
+        body .ContactContainer .Contact .ContactInformation{
+            width: 96%;
+            height: 100%;
+        }
+        body .ContactContainer .Contact .ContactInformation .Title{
+            margin-bottom: 20%;
+            width: 90%;
+        }
+        body .ContactContainer .Contact .ContactInformation .ContactLinks{
+            width: 90%;
+            margin-bottom: 13%;
+        }
+        body .ContactContainer .Contact .ContactInformation .ContactLinks ul{
+            list-style: none;   
+            width: 100%;
+        }
+        body .ContactContainer .Contact .ContactInformation .ContactLinks ul li{
+            width: 100%;
+        }
+        body .ContactContainer .Contact .ContactInformation .ContactLinks ul li a{
+            display: flex;
+            width: 90%;
+        }
+        body .ContactContainer .Contact .ContactInformation .Contactform{
+            width: 90%;
+        }
+        body .ContactContainer .Contact .ContactInformation .Contactform form{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+        }
+        body .ContactContainer .Contact .ContactInformation .Contactform form label{
+            font-family: var(--texto);
+            width: 20%;
+        }
+        body .ContactContainer .Contact .ContactInformation .Contactform form input{
+            width: 50%;
+            height: 30px;
+            border-radius: 5px;
+        }
+        body .ContactContainer .Contact .ContactInformation .Contactform form textarea{
+            width: 100%;
+        }
+        body .ContactContainer .Contact .ContactInformation .Contactform form input:first-of-type{
+            margin-right: 5%;
+        }
+        body .ContactContainer .Contact .ContactInformation .Contactform form .input-grup{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        /*---X------------X--------------X-----------X-------------X--------*/
+        /*-------------------------Parte dos Depoimentos --------------------*/
+        body .TestimonialContainer .Testimonial{
+            height:100%;
+        }
+        body .TestimonialContainer .Testimonial .TestimonialInformation{
+            height: 100%;
+        }
+        body .TestimonialContainer .Testimonial .TestimonialInformation .Title{
+            margin-bottom: 20%;
+        }
+        body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace{
+            width: 90%;
+            height: 75%;
+            padding: 0;
+            display: flex;
+            box-shadow: none;
+            overflow-y:scroll;
+        }
+        body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person{
+            width: 100%;
+        }
+        body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonText{
+            width: 100%;
+            height: 100%;
+            overflow:scroll;
+        }
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 425px){
+            /*------------------------Parte do Containers-----------------------*/
+            body .Container{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 2%;
+                margin-top: 5%;
+            }
+            body .AboutContainer{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 2%;
+                margin-top: 20%;
+            }
+            body .ExpirienceContainer{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin-left: 2%;
+                margin-top: 20%;
+            }
+            body .ProjectContainer{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin-left: 2%;
+                margin-top: 20%;     
+            }
+            body .CertificatesContainer{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin-left: 2%;
+                margin-top: 20%;
+            }
+            body .ContactContainer{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin-left: 2%;
+                margin-top: 20%;
+            }
+            body .TestimonialContainer{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin-left: 2%;
+                margin-top: 20%;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-----------------Parte dos títulos das páginas 60px--------------------*/
+            .Title h1 {
+                font-size: 2rem;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-------------------Conteúdo do container principal----------------*/
+
+            body .Container .Introduction{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 60%;
+                height: 100%;
+                min-width: 300px;
+                margin-left: 10%;
+            }
+            body .Container .Introduction h1{
+                font-family: var(--title);
+                font-weight: 600;
+                font-size: 3.8rem;
+                margin-bottom: 10px;
+                color:var(--title-color);
+            }
+            body .Container .Introduction h2{
+                font-family: var(--title);
+                font-weight: 600;
+                font-size: 3rem;  
+                margin-bottom: 10px;
+            }
+            body .Container .Introduction h2 span{
+                font-family: var(--span);
+                font-weight: 500;
+                font-size: 5rem;
+                letter-spacing: 3px;
+                color:var(--span-color);
+                text-shadow: 2px 2px 5px #000000;
+                margin-left: 5px;
+            }
+            body .Container .IntroductionImage{
+                background-image: none;
+                display: flex;
+                height: 10%;
+            }
+            body .Container .Introduction p:first-of-type{
+                font-family: var(--texto);
+                font-weight: 700;
+                font-size: 1.6rem;
+                text-shadow: 2px 2px 20px #000000;
+                color: var(--title-color);
+                background-color: rgb(255, 196, 0, 0.85);
+                margin-bottom: 20px;
+            }
+            body .Container .Introduction p{
+                text-align: justify;
+                font-family: var(--texto);
+                margin-bottom: 40px;
+                font-size: 1.6rem;
+            }
+            body .Container .Introduction button{
+                font-family: var(--title);
+                font-weight: 700;
+                border-radius: 20px;
+                padding: 10px;
+                position: relative;
+                left: 20%;
+                color: var(--title-color);
+                background-color: rgb(255, 196, 0, 0.85);
+                border: 2px solid black;
+                cursor: pointer;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*---------------------Parte do Menu (Principal)--------------------*/
+            Body .Container .IntroductionImage .Menu{
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                left: 5%;
+                top:2%;
+                width: 90%;
+                height: 60%;
+                padding: 0px 5px;
+            }
+            Body .Container .IntroductionImage .Menu .Line{
+                border:none;
+                position: relative;
+                left: 13px;
+                z-index:0;
+            }
+            Body .Container .IntroductionImage .Menu ul{
+                list-style: none;
+                width: 100%;
+                margin-left: 1%;
+                gap: 25px;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+            }
+            Body .Container .IntroductionImage .Menu ul li{
+                margin-bottom: 20px;
+                background-color: var(--menu-color);
+                position: relative;
+                z-index: 100;
+            }
+            Body .Container .IntroductionImage .Menu ul li a{
+                cursor: pointer;
+            }
+            Body .Container .IntroductionImage .Menu ul li a span{
+                color: #000000;
+                height: 30px;
+            }
+
+            Body .Container .IntroductionImage .Menu ul li a span:hover{
+                color: aliceblue;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-------------------------Parte do MENU (OUTROS)-------------------*/
+
+            .MainMenu{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                max-width: 800px;
+                height: 10%;
+            }
+            .MainMenu img{
+                display: none;
+            }
+            .MainMenu .NavBar{
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                overflow-x: scroll;
+                width: 100%;
+                height: 100%;
+                margin-top:0;
+                margin-left: 10px;
+            }
+            .MainMenu .NavBar ul{
+                margin-top:none;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                top: -50px;
+                width: 100%;
+                height: auto;
+            }
+            .MainMenu .NavBar ul li{
+                list-style: none;
+                margin-bottom: none;
+                display: flex;
+                margin-right: 50px;
+                justify-content: space-between;
+
+            }
+            .MainMenu .NavBar ul li:last-child{
+                margin-bottom: 0;
+            }
+            .MainMenu .NavBar ul li a{
+                font-family: var(--title);
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.5rem;
+                color: var(--title-color);
+            }
+            .MainMenu .NavBar .About{
+                color: aliceblue;
+            }
+            .MainMenu .NavBar ul li a:hover{
+                color: aliceblue;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*----------------------Parte do Pessoal (ABOUT)---------------------*/
+            body .AboutContainer .About{
+                display: flex;
+                flex-direction: column;
+            }
+            body .AboutContainer .About .AboutInformation{
+                width: 98%;
+                height: 95%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+            }
+
+            body .AboutContainer .About .Title {
+                top:0px;
+                height: 10%;
+                width: 91%;
+                margin-top: 0;
+                margin-bottom: 5%;
+            }
+            body .AboutContainer .About .AboutInformation .Text{
+                height: 20%;
+                width: 91%;
+                max-width: 799px;
+                margin-bottom: 0;
+                overflow-y: scroll;
+                padding: 5px 5px;
+            }
+            body .AboutContainer .About .AboutInformation .Text p{
+                text-align: justify;
+                font-family: var(--texto);
+                font-size: 1.6rem;
+            }
+
+            /*----------------------Parte do Pessoal (SKILL)---------------------*/
+            body .AboutContainer .About .AboutInformation .Skills{
+                width: 91%;
+                max-width: 799px;
+                margin-top: 0;
+                background-color:aliceblue;
+                height: 28%;
+                box-shadow: 
+                    -5px -4px 3px 0px rgba(254, 254, 254, 0.568),
+                    5px  4px 3px 0px rgba(88,88,88,0.425);
+                overflow-y: scroll;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-------------------------Parte da Experiencia --------------------*/
+            body .ExpirienceContainer .Expirience{
+                Display: flex;
+                flex-direction: column;
+            }
+            body .ExpirienceContainer .Expirience .ExpirienceInformation{
+                width: 98%;
+                height: 95%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+            }
+            body .ExpirienceContainer .Expirience .ExpirienceInformation .Title{
+                top:10px;
+                height: 4%;
+                width: 91%;
+                margin-top:0;
+                margin-bottom: 5%;
+            }
+            body .ExpirienceContainer .Expirience .ExpirienceInformation .Information{
+                width: 90%;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                overflow-y: scroll;
+            }
+            /*-------------------------Parte do history line---- --------------------*/
+            .Education{
+                width: 90%;
+                height: 100%;
+                position: relative;
+                left: 10%;
+                top: 2%;
+                border-left: 2px solid black;
+                padding: 0 20px 0 30px;
+                margin-bottom: 20%;
+                font-size: 1.6rem;
+
+            }
+            .Education h1::before{
+                content: '';
+                display:block ;
+                width: 10%;
+                max-width: 45px;
+                height: 7%;
+                border-radius: 15%;
+                position: absolute;
+                left: -5%;
+                background-color: hsl(242, 2%, 12%);
+                box-shadow: 0px 5px 10px #888888;
+            }
+            .Education div::before{
+                content: "";
+                display:block ;
+                width: 3%;
+                min-width: 15px;
+                height: 3%;
+                border-radius: 50%;
+                background-color: orange;
+                border: 3px solid hsl(242, 2%, 12%);
+                position: absolute;
+                margin-top: 0.8vh;
+                left: -1.3vh;
+            }
+            .Education div h2{
+                color:hsl(242, 2%, 12%) ;
+                margin-bottom: 0.5vh;
+            }
+            .Education div h4 {
+                color:rgb(96, 98, 128);
+                margin-bottom: 0.5vh;
+            }
+            .Education div h3{
+                color:hsl(240, 7%, 19%) ;
+                margin-bottom: 1.2vh;
+            }
+
+
+            .Work{
+                width: 90%;
+                height: 500%;
+                position: relative;
+                left: 10%;
+                top: 10%;
+                margin-top: 10%;
+                border-left: 2px solid black;
+                padding: 0 20px 0 30px;
+                margin-bottom: 4.4vh;
+                font-size: 1.6rem;
+            }
+            .InformationTitle{
+                margin-bottom: 2vh;
+            }
+            .Work h1::before{
+                content: '';
+                display:block ;
+                width: 10%;
+                max-width: 45px;
+                height: 3.5vh;
+                border-radius: 15%;
+                position: absolute;
+                left: -5%;
+                background-color: hsl(242, 2%, 12%);
+                box-shadow: 0px 5px 10px #888888;
+            }
+            .Work div::before{
+                content: "";
+                display:block ;
+                width: 3%;
+                min-width: 15px;
+                height: 1.5%;
+                border-radius: 50%;
+                background-color: orange;
+                border: 3px solid hsl(242, 2%, 12%);
+                position: absolute;
+                margin-top: 0.8vh;
+                left: -1.3vh;
+            }
+            .Work div h2{
+                color:hsl(242, 2%, 12%) ;
+                margin-bottom: 0.5vh;
+            }
+            .Work div h4 {
+                color:rgb(96, 98, 128);
+                margin-bottom: 0.5vh;
+            }
+            .Work div h3{
+                color:hsl(240, 7%, 19%) ;
+                margin-bottom: 0.5vh;
+            }
+            .Work div h4:last-child{
+                margin-bottom: 1.2vh;
+                text-align: justify;
+            }
+            /*_______X_____________X___________X_____________X_______________X*/
+            /*-------------------------Parte dos Projetos --------------------*/
+            body .ProjectContainer .Project{
+                Display: flex;
+                flex-direction: column;
+                align-items: center;
+                grid-column: 2;
+            }
+
+            body .ProjectContainer .Project .ProjectInformation{
+                width: 98%;
+                height: 95%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+            }
+            body .ProjectContainer .Project .ProjectInformation .Title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 30px;
+                border: 2px dashed black;
+                height: 10%;
+                width: 91%;
+                max-width: 799px;
+                margin-bottom: 8%;
+            }
+            body .ProjectContainer .Project .ProjectInformation .ProjectsContent{
+                width: 90%;
+                height: 50%;
+                max-height: 900px;
+                overflow-y: scroll;
+            }
+            body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul{ 
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                overflow: hidden;
+                gap: 1vh;
+            }
+            body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li{
+                width: 380px;
+                height: 230px;
+                border-radius: 15px;
+                overflow: hidden;
+                list-style: none;
+                margin-bottom: 50px;
+
+            }
+            body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li{
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li img{
+                width: 380px;
+                height: 230px;
+                border-radius: 15px;
+                transform: scale(0.95);
+            }
+            body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li img:hover{
+                animation: Projects  1.5s linear forwards;
+            }
+            @keyframes Projects{
+                100%{
+                    transform: scale(1)
+                }
+            }
+
+            .ProjectExplainer{
+                background-color: var(--project-container-color);
+                border-radius: 15px;
+                color: var(--container-color);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                width: 380px;
+                height: 230px;
+                box-shadow: 
+                -5px -4px 3px 0px rgba(254, 254, 254, 0.568),
+                5px  4px 3px 0px rgba(88,88,88,0.425);
+                cursor: pointer;
+            }
+            .ProjectExplainer a{
+                text-decoration: none;
+            }
+            .ProjectExplainer a h1{
+            text-align: center;
+            font-family: var(--title);
+            font-size: 20px;
+            text-shadow: 2px 2px 5px #000000; 
+            margin-bottom: 40px;
+            color: #eeecec;
+            }
+            .ProjectExplainer  a p{
+                text-decoration: none;
+                color: #eeecec;
+            font-family: var(--texto);
+            font-weight: 700;
+            text-align: justify;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-------------------------Parte dos Certificados --------------------*/
+            body .CertificatesContainer .Certificate{
+                Display: flex;
+                flex-direction: column;
+                align-items: center;
+                height:98%;
+            }
+
+            body .CertificatesContainer .Certificate .CertificateInformation{
+                width: 98%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+            }
+            body .CertificatesContainer .Certificate .CertificateInformation .Title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 2%;
+                border: 2px dashed black;
+                height: 20%;
+                width: 91%;
+                max-width: 799px;
+                margin-bottom: 8%;
+            }
+            body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent{
+                width: 90%;
+                height: 100%;
+                align-items: center;
+                overflow-y: scroll;
+            }
+            body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul{ 
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                overflow: hidden;
+                gap: 1vh;
+            }
+            body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul li{
+                width: 380px;
+                height: 330px;
+                border-radius: 15px;
+                overflow: hidden;
+                list-style: none;
+                margin-bottom: 30px;
+                cursor: pointer;
+
+            }
+            body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul li img{
+                width: 95%;
+                height: 95%;
+                border-radius: 15px;
+                margin-left: 3%;
+                transform: scale(0.95);
+            }
+            body .CertificatesContainer .Certificate .CertificateInformation .CertificateContent ul li img:hover{
+                animation: Certificate  1.5s linear forwards;
+            }
+            @keyframes Certificate{
+                100%{
+                    transform: scale(1)
+                }
+            }
+
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-------------------------Parte do Contato --------------------*/
+            body .ContactContainer .Contact{
+                Display: flex;
+                flex-direction: column;
+                align-items: center;
+                height:98%;
+            }
+
+            body .ContactContainer .Contact .ContactInformation{
+                width: 98%;
+                height: 98%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+            }
+            body .ContactContainer .Contact .ContactInformation .Title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 2%;
+                border: 2px dashed black;
+                height: 30%;
+                width: 91%;
+                max-width: 799px;
+                margin-bottom: 10%;
+            }
+            body .ContactContainer .Contact .ContactInformation .ContactLinks{
+                width: 90%;
+                border: 2px dashed black;
+                padding: 10px;
+                margin-bottom: 10%;
+            }
+            body .ContactContainer .Contact .ContactInformation .ContactLinks ul{
+                list-style: none;   
+                width: 35vh;
+            }
+            body .ContactContainer .Contact .ContactInformation .ContactLinks ul li{
+                margin-bottom: 10px;
+            }
+            body .ContactContainer .Contact .ContactInformation .ContactLinks ul li a{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-decoration: none;
+                font-family: var(--texto);
+            }
+            body .ContactContainer .Contact .ContactInformation .ContactLinks ul li a img {
+                width: 16px;
+                height: 16px;
+                margin-right:5px;
+            }
+            body .ContactContainer .Contact .ContactInformation .Contactform{
+                width: 90%;
+                border: 2px dashed black;
+                padding: 10px;
+            }
+            body .ContactContainer .Contact .ContactInformation .Contactform form{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+            }
+            body .ContactContainer .Contact .ContactInformation .Contactform form label{
+                font-family: var(--texto);
+                margin-right: 10px;
+            }
+            body .ContactContainer .Contact .ContactInformation .Contactform form input{
+                width: 60%;
+                height: 30px;
+                border-radius: 5px;
+            }
+            body .ContactContainer .Contact .ContactInformation .Contactform form textarea{
+                width: 100%;
+            }
+            body .ContactContainer .Contact .ContactInformation .Contactform form input:first-of-type{
+                margin-right: 5%;
+            }
+            body .ContactContainer .Contact .ContactInformation .Contactform form button{
+                font-family: var(--title);
+                width: 200px;
+                border-radius: 15px;
+                cursor: pointer;
+                position: relative;
+                left: 18%;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-------------------------Parte dos Depoimentos --------------------*/
+            body .TestimonialContainer .Testimonial{
+                Display: flex;
+                flex-direction: column;
+                align-items: center;
+                height:98%;
+            }
+
+            body .TestimonialContainer .Testimonial .TestimonialInformation{
+                width: 98%;
+                height: 98%;
+                display: flex;
+            }
+            body .TestimonialContainer .Testimonial .TestimonialInformation .Title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 2%;
+                border: 2px dashed black;
+                height: 10%;
+                width: 91%;
+                max-width: 799px;
+                margin-bottom: 8%;
+            }
+            body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace{
+                width: 90%;
+                height: 75%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 
+                -5px -4px 3px 0px rgba(254, 254, 254, 0.568),
+                5px  4px 3px 0px rgba(88,88,88,0.425);
+                overflow-y:scroll   ;
+            }
+            body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 8%;
+                border-radius: 20px;
+                background-color: var(--title-color);
+                padding: 10px;
+            }
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 375px){
+            /*------------------------Parte do Containers-----------------------*/
+            body .Container{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 1%;
+                margin-top: 5%;
+            }
+            body .AboutContainer{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 1%;
+                margin-top: 20%;
+            }
+            body .ExpirienceContainer{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin-left: 1%;
+                margin-top: 20%;
+            }
+            body .ProjectContainer{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin-left: 1%;
+                margin-top: 20%;     
+            }
+            body .CertificatesContainer{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin-left: 1%;
+                margin-top: 20%;
+            }
+            body .ContactContainer{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin-left: 1%;
+                margin-top: 20%;
+            }
+            body .TestimonialContainer{
+                width: 90%;
+                display:flex;
+                flex-direction: column;
+                margin-left: 1%;
+                margin-top: 20%;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-----------------Parte dos títulos das páginas 60px--------------------*/
+            .Title h1 {
+                font-size: 2rem;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-------------------Conteúdo do container principal----------------*/
+
+            body .Container .Introduction{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 60%;
+                height: 100%;
+                min-width: 300px;
+                margin-left: 5%;
+            }
+            body .Container .Introduction h1{
+                font-family: var(--title);
+                font-weight: 600;
+                font-size: 3.8rem;
+                margin-bottom: 10px;
+                color:var(--title-color);
+            }
+            body .Container .Introduction h2{
+                font-family: var(--title);
+                font-weight: 600;
+                font-size: 3rem;  
+                margin-bottom: 10px;
+            }
+            body .Container .Introduction h2 span{
+                font-family: var(--span);
+                font-weight: 500;
+                font-size: 5rem;
+                letter-spacing: 3px;
+                color:var(--span-color);
+                text-shadow: 2px 2px 5px #000000;
+                margin-left: 5px;
+            }
+            body .Container .IntroductionImage{
+                background-image: none;
+                display: flex;
+                height: 10%;
+            }
+            body .Container .Introduction p:first-of-type{
+                font-family: var(--texto);
+                font-weight: 700;
+                font-size: 1.6rem;
+                text-shadow: 2px 2px 20px #000000;
+                color: var(--title-color);
+                background-color: rgb(255, 196, 0, 0.85);
+                margin-bottom: 20px;
+            }
+            body .Container .Introduction p{
+                text-align: justify;
+                font-family: var(--texto);
+                margin-bottom: 40px;
+                font-size: 1.6rem;
+            }
+            body .Container .Introduction button{
+                font-family: var(--title);
+                font-weight: 700;
+                border-radius: 20px;
+                padding: 10px;
+                position: relative;
+                left: 20%;
+                color: var(--title-color);
+                background-color: rgb(255, 196, 0, 0.85);
+                border: 2px solid black;
+                cursor: pointer;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*---------------------Parte do Menu (Principal)--------------------*/
+            Body .Container .IntroductionImage .Menu ul{
+                margin-left: 1%;
+                gap: 6%;
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-------------------------Parte do MENU (OUTROS)-------------------*/
+
+            .MainMenu{
+                height: 10%;
+            }
+            .MainMenu .NavBar{
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                overflow-x: scroll;
+                width: 100%;
+                height: 100%;
+                margin-top:4%;
+                margin-left: 10px;
+            }
+            .MainMenu .NavBar ul{
+                margin-top:none;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                top: -50px;
+                width: 100%;
+                height: auto;
+            }
+            .MainMenu .NavBar ul li{
+                list-style: none;
+                margin-bottom: none;
+                display: flex;
+                margin-right: 50px;
+                justify-content: space-between;
+
+            }
+            .MainMenu .NavBar ul li:last-child{
+                margin-bottom: 0;
+            }
+            .MainMenu .NavBar ul li a{
+                font-family: var(--title);
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.5rem;
+                color: var(--title-color);
+            }
+            .MainMenu .NavBar .About{
+                color: aliceblue;
+            }
+            .MainMenu .NavBar ul li a:hover{
+                color: aliceblue;
+            }
+            /*_______X_____________X___________X_____________X_______________X*/
+            /*-------------------------Parte dos Projetos --------------------*/
+
+            body .ProjectContainer .Project .ProjectInformation .Title{
+                top: 2%;
+                height: 10%;
+                margin-bottom: 10%;
+            }
+            body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li img{
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                transform: scale(0.95);
+            }
+            /*---X------------X--------------X-----------X-------------X--------*/
+            /*-------------------------Parte dos Depoimentos --------------------*/
+
+            body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonFile img{
+                width: 100%;
+                height: 40%;
+            }  
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 320px){
+                        /*------------------------Parte do Containers-----------------------*/
+                    body .Container{
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 1%;
+                    margin-top: 5%;
+                    }
+                    body .AboutContainer{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 1%;
+                    margin-top: 20%;
+                    }
+                    body .ExpirienceContainer{
+                    width: 90%;
+                    display:flex;
+                    flex-direction: column;
+                    margin-left: 1%;
+                    margin-top: 20%;
+                    }
+                    body .ProjectContainer{
+                    width: 90%;
+                    display:flex;
+                    flex-direction: column;
+                    margin-left: 1%;
+                    margin-top: 20%;     
+                    }
+                    body .CertificatesContainer{
+                    width: 90%;
+                    display:flex;
+                    flex-direction: column;
+                    margin-left: 1%;
+                    margin-top: 20%;
+                    }
+                    body .ContactContainer{
+                    width: 90%;
+                    display:flex;
+                    flex-direction: column;
+                    margin-left: 1%;
+                    margin-top: 20%;
+                    }
+                    body .TestimonialContainer{
+                    width: 90%;
+                    display:flex;
+                    flex-direction: column;
+                    margin-left: 1%;
+                    margin-top: 20%;
+                    }
+                    /*---X------------X--------------X-----------X-------------X--------*/
+                    /*-------------------Conteúdo do container principal----------------*/
+
+                    body .Container .Introduction{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    width: 40%;
+                    height: 100%;
+                    min-width: 300px;
+                    margin-left: 5%;
+                    }
+                    body .Container .Introduction h1{
+                    font-family: var(--title);
+                    font-weight: 600;
+                    font-size: 3.8rem;
+                    margin-bottom: 10px;
+                    color:var(--title-color);
+                    }
+                    body .Container .Introduction h2{
+                    font-family: var(--title);
+                    font-weight: 600;
+                    font-size: 3rem;  
+                    margin-bottom: 10px;
+                    }
+                    body .Container .Introduction h2 span{
+                    font-family: var(--span);
+                    font-weight: 500;
+                    font-size: 5rem;
+                    letter-spacing: 3px;
+                    color:var(--span-color);
+                    text-shadow: 2px 2px 5px #000000;
+                    margin-left: 5px;
+                    }
+                    body .Container .IntroductionImage{
+                    background-image: none;
+                    display: flex;
+                    height: 10%;
+                    }
+                    body .Container .Introduction p:first-of-type{
+                    font-family: var(--texto);
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    text-shadow: 2px 2px 20px #000000;
+                    color: var(--title-color);
+                    background-color: rgb(255, 196, 0, 0.85);
+                    margin-bottom: 20px;
+                    width: 92%;
+                    }
+                    body .Container .Introduction p{
+                    text-align: justify;
+                    font-family: var(--texto);
+                    margin-bottom: 40px;
+                    font-size: 1.6rem;
+                    width: 92%;
+                    }
+                    body .Container .Introduction button{
+                    font-family: var(--title);
+                    font-weight: 700;
+                    border-radius: 20px;
+                    padding: 10px;
+                    position: relative;
+                    left: 20%;
+                    color: var(--title-color);
+                    background-color: rgb(255, 196, 0, 0.85);
+                    border: 2px solid black;
+                    cursor: pointer;
+                    }
+                    /*---X------------X--------------X-----------X-------------X--------*/
+                    /*---------------------Parte do Menu (Principal)--------------------*/
+                    Body .Container .IntroductionImage .Menu ul{
+                    margin-left: 1%;
+                    gap: 5%;
+                    }
+                    /*---X------------X--------------X-----------X-------------X--------*/
+                    /*-------------------------Parte do MENU (OUTROS)-------------------*/
+
+                    .MainMenu{
+                    height: 10%;
+                    }
+                    .MainMenu .NavBar{
+                    display: flex;
+                    flex-direction: row;
+                    text-align: center;
+                    overflow-x: scroll;
+                    width: 100%;
+                    height: 100%;
+                    margin-top:15%;
+                    margin-left: 10px;
+                    }
+                    .MainMenu .NavBar ul{
+                    margin-top:none;
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    top: -50px;
+                    width: 100%;
+                    height: auto;
+                    }
+                    .MainMenu .NavBar ul li{
+                    list-style: none;
+                    margin-bottom: none;
+                    display: flex;
+                    margin-right: 50px;
+                    justify-content: space-between;
+
+                    }
+                    .MainMenu .NavBar ul li:last-child{
+                    margin-bottom: 0;
+                    }
+                    .MainMenu .NavBar ul li a{
+                    font-family: var(--title);
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    color: var(--title-color);
+                    }
+                    .MainMenu .NavBar .About{
+                    color: aliceblue;
+                    }
+                    .MainMenu .NavBar ul li a:hover{
+                    color: aliceblue;
+                    }
+                    /*_______X_____________X___________X_____________X_______________X*/
+                    /*----------------------Parte do Pessoal (ABOUT)---------------------*/
+                    body .AboutContainer .About{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    body .AboutContainer .About .AboutInformation{
+                        width: 98%;
+                        height: 95%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        overflow: hidden;
+                    }
+
+                    body .AboutContainer .About .Title {
+                        top:0px;
+                        height: 10%;
+                        width: 91%;
+                        margin-top: 0;
+                        margin-bottom: 5%;
+                    }
+                    body .AboutContainer .About .AboutInformation .Text{
+                        height: 20%;
+                        width: 91%;
+                        max-width: 799px;
+                        margin-bottom: 0;
+                        overflow-y: scroll;
+                        padding: 5px 5px;
+                    }
+                    body .AboutContainer .About .AboutInformation .Text p{
+                        text-align: justify;
+                        font-family: var(--texto);
+                        font-size: 1.6rem;
+                    }
+
+                    /*----------------------Parte do Pessoal (SKILL)---------------------*/
+                    body .AboutContainer .About .AboutInformation .Skills{
+                        width: 91%;
+                        max-width: 799px;
+                        margin-top: 0;
+                        background-color:aliceblue;
+                        height: 24%;
+                        box-shadow: 
+                            -5px -4px 3px 0px rgba(254, 254, 254, 0.568),
+                            5px  4px 3px 0px rgba(88,88,88,0.425);
+                        overflow-y: scroll;
+                    }
+                    /*---X------------X--------------X-----------X-------------X--------*/
+                    /*-------------------------Parte da Experiencia --------------------*/
+                    body .ExpirienceContainer .Expirience{
+                        width: 100%;
+                    }
+                    body .ExpirienceContainer .Expirience .ExpirienceInformation{
+                        height: 100%;
+                    }
+                    body .ExpirienceContainer .Expirience .ExpirienceInformation .Title{
+                        margin-bottom: 15%;
+                    }
+                    body .ExpirienceContainer .Expirience .ExpirienceInformation .Content{
+                        margin-bottom: 8%;
+                    }
+
+                    body .ExpirienceContainer .Expirience .ExpirienceInformation .Information{
+                        width: 90%;
+                        height: 20%;
+                        display: flex;
+                        flex-direction: column;
+                        overflow-y: scroll;
+                    }
+                    /*-------------------------Parte do history line---- --------------------*/
+                    .Education{
+                        width: 80%;
+                        height: fit-content;
+                        position: relative;
+                        left: 10%;
+                        top: 8%;
+                        border-left: 2px solid black;
+                        padding: 0 20px 0 30px;
+                        margin-bottom: 4.4vh;
+                        font-size: 1.6rem;
+
+                    }
+                    .Education h1::before{
+                        content: '';
+                        display:block ;
+                        width: 15%;
+                        max-width: 45px;
+                        height: 3.5vh;
+                        border-radius: 15%;
+                        position: absolute;
+                        left: -8%;
+                        background-color: hsl(242, 2%, 12%);
+                        box-shadow: 0px 5px 10px #888888;
+                    }
+                    .Education div::before{
+                        content: "";
+                        display:block ;
+                        width: 3%;
+                        min-width: 15px;
+                        height: 3%;
+                        border-radius: 50%;
+                        background-color: orange;
+                        border: 3px solid hsl(242, 2%, 12%);
+                        position: absolute;
+                        margin-top: 0.8vh;
+                        left: -1.3vh;
+                    }
+                    .Work{
+                        width: 80%;
+                        padding: 0 20px 0 30px;
+                        margin-bottom: 4.4vh;
+                        font-size: 1.6rem;
+                    }
+                    .InformationTitle{
+                        margin-bottom: 2vh;
+                    }
+                    .Work h1::before{
+                        content: '';
+                        display:block ;
+                        width: 15%;
+                        max-width: 45px;
+                        height: 3.5vh;
+                        border-radius: 15%;
+                        position: absolute;
+                        left: -8%;
+                        background-color: hsl(242, 2%, 12%);
+                        box-shadow: 0px 5px 10px #888888;
+                    }
+                    .Work div::before{
+                        content: "";
+                        display:block ;
+                        width: 3%;
+                        min-width: 15px;
+                        height: 1%;
+                        border-radius: 50%;
+                        background-color: orange;
+                        border: 3px solid hsl(242, 2%, 12%);
+                        position: absolute;
+                        margin-top: 0.8vh;
+                        left: -1.3vh;
+                    }
+                    /*_______X_____________X___________X_____________X_______________X*/
+                    /*-------------------------Parte dos Projetos --------------------*/
+
+                    body .ProjectContainer .Project .ProjectInformation .Title{
+                    top: 2%;
+                    height: 10%;
+                    margin-bottom: 10%;
+                    }
+                    body .ProjectContainer .Project .ProjectInformation .ProjectsContent ul li img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    transform: scale(0.95);
+                    }
+                    .ProjectExplainer{
+                        background-color: var(--project-container-color);
+                        border-radius: 15px;
+                        color: var(--container-color);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+                        width: 380px;
+                        height: 230px;
+                        box-shadow: 
+                        -5px -4px 3px 0px rgba(254, 254, 254, 0.568),
+                        5px  4px 3px 0px rgba(88,88,88,0.425);
+                        cursor: pointer;
+                    }
+                    .ProjectExplainer a{
+                        text-decoration: none;
+                        width: 80%;
+                    }
+                    .ProjectExplainer a h1{
+                    text-align: center;
+                    font-family: var(--title);
+                    font-size: 20px;
+                    text-shadow: 2px 2px 5px #000000; 
+                    margin-bottom: 5%;
+                    color: #eeecec;
+                    }
+                    .ProjectExplainer  a p{
+                        text-decoration: none;
+                        color: #eeecec;
+                        font-family: var(--texto);
+                        font-weight: 700;
+                        text-align: justify;
+                    }
+                    /*---X------------X--------------X-----------X-------------X--------*/
+                    body .ContactContainer .Contact .ContactInformation .Contactform form button{
+                        font-family: var(--title);
+                        width: 200px;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        position: relative;
+                        left: 7%;
+                    }
+                    /*-------------------------Parte dos Depoimentos --------------------*/
+
+                    body .TestimonialContainer .Testimonial .TestimonialInformation .TestimonialSpace .Person .PersonFile img{
+                    width: 100%;
+                    height: 40%;
+                    }  
+}
