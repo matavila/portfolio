@@ -1,8 +1,7 @@
 # Portfolio
-<img align="right" height="590em" src="https://raw.githubusercontent.com/gist/matavila/08c88593c4bf43498b301b5e5646a8b9/raw/0c164bb26118c4582564e483496ac2653e1afe69/githubcard.svg"/>
+<img align="right" height="590em" src="[https://raw.githubusercontent.com/gist/matavila/08c88593c4bf43498b301b5e5646a8b9/raw/0c164bb26118c4582564e483496ac2653e1afe69/githubcard.svg](https://user-images.githubusercontent.com/114540978/214165060-4b1d2805-3806-407d-b12d-f58a44107e59.png)"/>
 
 <h1 align="left">Olá <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" height="30px">, Este é meu portfólio</h1>
-![image](https://user-images.githubusercontent.com/114540978/214165060-4b1d2805-3806-407d-b12d-f58a44107e59.png)
 
 Para esse projeto foram utilizadas as seguintes stacks: 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
